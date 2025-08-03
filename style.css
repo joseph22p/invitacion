@@ -1,27 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;500&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #fbeee6, #fff);
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  background: url('https://images.unsplash.com/photo-1526275520471-cfa07c5f1b50?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
   text-align: center;
+  backdrop-filter: blur(4px);
 }
 
 .container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
   padding: 2rem;
+  margin: 2rem auto;
   max-width: 600px;
-  margin: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 h1 {
-  font-size: 3rem;
-  color: #b97d60;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #fef2f2;
+  margin-bottom: 0.2rem;
 }
 
 .names {
   font-size: 2rem;
-  font-weight: bold;
-  margin-top: -1rem;
-  color: #6f4e37;
+  font-weight: 500;
+  color: #fcd5ce;
 }
 
 .date, .location, .message {
@@ -31,11 +39,15 @@ h1 {
 
 #contador {
   margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
 }
 
 .countdown span {
   font-size: 2rem;
   margin: 0 0.5rem;
+  color: #fde2e4;
 }
 
 .video {
@@ -44,33 +56,35 @@ h1 {
 
 video {
   width: 100%;
-  max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(255,255,255,0.2);
 }
 
+/* Música invisible */
+audio {
+  display: none;
+}
+
+/* Responsive para celulares */
 @media (max-width: 600px) {
   .container {
-    padding: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .names {
     font-size: 1.5rem;
   }
 
-  .date, .location, .message {
-    font-size: 1rem;
-  }
-
   .countdown span {
     font-size: 1.5rem;
   }
 
-  video {
-    max-width: 100%;
+  .date, .location, .message {
+    font-size: 1rem;
   }
 }
