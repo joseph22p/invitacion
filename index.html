@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Invitación de Boda</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #fff0f5;
-      color: #333;
-      padding: 30px;
-    }
-    h1 {
-      color: #d81b60;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>¡Nos casamos!</h1>
-  <p>Estás cordialmente invitado a nuestra boda</p>
-  <p><strong>Fecha:</strong> 15 de noviembre de 2025</p>
-  <p><strong>Hora:</strong> 5:00 PM</p>
-  <p><strong>Lugar:</strong> Hacienda La Esperanza</p>
-  <br>
-  <p>Por favor confirma tu asistencia:</p>
-  <a href="https://wa.me/1234567890" target="_blank">Confirmar por WhatsApp</a>
+  <audio autoplay loop>
+    <source src="assets/musica.mp3" type="audio/mp3" />
+  </audio>
+
+  <div class="container">
+    <h1>¡Nos casamos!</h1>
+    <p class="names">Joseph & Valeria</p>
+    <p class="date">Sábado 15 de noviembre de 2025</p>
+    <p class="location">Lima, Perú</p>
+
+    <div id="contador">
+      <h2>Faltan:</h2>
+      <div class="countdown">
+        <span id="dias">--</span>d
+        <span id="horas">--</span>h
+        <span id="minutos">--</span>m
+        <span id="segundos">--</span>s
+      </div>
+    </div>
+
+    <div class="video">
+      <video controls>
+        <source src="assets/video.mp4" type="video/mp4">
+        Tu navegador no soporta este video.
+      </video>
+    </div>
+
+    <p class="message">Con mucha alegría, te invitamos a compartir este día tan especial con nosotros.</p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
